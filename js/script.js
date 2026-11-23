@@ -1,7 +1,7 @@
 // script.js - javascript for my Lesotho website
-// I used bootstrap for the layout and wrote the rest myself
+// I used bootstrap for the layout and wrote the rest myself plus help of google ai
 
-// ================= dark mode button =================
+// ========= dark mode button =================
 var themeButton = document.getElementById("themeToggle");
 
 // the site always starts in light mode when it opens
@@ -16,6 +16,8 @@ themeButton.onclick = function () {
     themeButton.innerHTML = "🌙";
   }
 };
+
+
 
 // ================= search and filter (destinations page) =================
 var searchBox = document.getElementById("destinationSearch");
@@ -59,7 +61,12 @@ if (searchBox) {
   }
 }
 
-// ================= booking calculator (stays page) =================
+
+
+
+
+
+// ================ booking calculator (stays page) =================
 var calculator = document.getElementById("bookingCalculator");
 
 if (calculator) {
@@ -80,7 +87,10 @@ if (calculator) {
   updateTotal();
 }
 
-// ================= check the forms =================
+
+
+
+// ================= check the forms (validation)================
 var forms = document.querySelectorAll(".js-validated-form");
 
 for (var f = 0; f < forms.length; f++) {
@@ -119,7 +129,10 @@ for (var f = 0; f < forms.length; f++) {
   };
 }
 
-// ================= welcome message with the saved name =================
+
+
+
+// ================ welcome message with the saved name =================
 var savedName = localStorage.getItem("lesothoVisitorName");
 var welcome = document.getElementById("welcomeMessage");
 
