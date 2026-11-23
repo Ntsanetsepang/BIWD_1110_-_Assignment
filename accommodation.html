@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!-- places to stay page -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lesotho Accommodation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
+            <img class="brand-logo" src="Imgs/Coat_of_arms_of_Lesotho.jpg" alt="Coat of arms of Lesotho">
+            <span>Visit Lesotho</span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="myNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+              <li class="nav-item"><a class="nav-link active" href="accommodation.html">Stays</a></li>
+              <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Plan a trip</a></li>
+            </ul>
+
+            <button id="themeToggle" class="theme-toggle ms-lg-3" type="button">🌙</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- banner -->
+      <section class="page-hero">
+        <div class="container">
+          <span>Sleep beneath the stars</span>
+          <h1>Places to stay</h1>
+        </div>
+      </section>
+
+      <!-- the 3 places to stay -->
+      <section class="section">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-lg-4">
+              <article class="stay-card">
+                <img src="Imgs/Avani lesotho.jpg" alt="Avani Lesotho hotel">
+                <div class="card-body">
+                  <span class="badge badge-category">Maseru</span>
+                  <h3 class="mt-3">Avani Lesotho</h3>
+                  <p>Stylish hotel in the centre of the capital.</p>
+                  <h4>M 1,450 <small>/ night</small></h4>
+                  <a class="btn btn-primary mt-2" href="contact.html">Check availability</a>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-lg-4">
+              <article class="stay-card">
+                <img src="Imgs/mountain view hotel.jpg" alt="Mountain View Hotel">
+                <div class="card-body">
+                  <span class="badge badge-category">Maseru</span>
+                  <h3 class="mt-3">Mountain View Hotel</h3>
+                  <p>Comfortable rooms with wide views over the highlands.</p>
+                  <h4>M 980 <small>/ night</small></h4>
+                  <a class="btn btn-primary mt-2" href="contact.html">Check availability</a>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-lg-4">
+              <article class="stay-card">
+                <img src="Imgs/greenlake guesthouse.jpg" alt="Greenlake Guest House">
+                <div class="card-body">
+                  <span class="badge badge-category">Maseru</span>
+                  <h3 class="mt-3">Greenlake Guest House</h3>
+                  <p>A friendly guest house close to the water.</p>
+                  <h4>M 1,180 <small>/ night</small></h4>
+                  <a class="btn btn-primary mt-2" href="contact.html">Check availability</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- small booking calculator -->
+      <section class="section section-tint">
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-lg-5">
+              <span>Stay estimate</span>
+              <h2>Build a simple quote</h2>
+              <p id="welcomeMessage">Choose your stay, nights and party size.</p>
+            </div>
+
+            <div class="col-lg-7">
+              <form id="bookingCalculator" class="form-panel">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label" for="stayType">Accommodation</label>
+                    <select id="stayType" class="form-select">
+                      <option value="1450">Avani Lesotho</option>
+                      <option value="980">Mountain View Hotel</option>
+                      <option value="1180">Greenlake Guest House</option>
+                    </select>
+                  </div>
+
+                  <div class="col-md-3">
+                    <label class="form-label" for="nights">Nights</label>
+                    <input id="nights" class="form-control" type="number" min="1" max="30" value="3">
+                  </div>
+
+                  <div class="col-md-3">
+                    <label class="form-label" for="guests">Guests</label>
+                    <input id="guests" class="form-control" type="number" min="1" max="12" value="2">
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <strong>Estimated total</strong>
+                  <h3 class="mb-0" id="bookingTotal">M 8,700</h3>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <h3>Visit Lesotho</h3>
+        <p>Travel slowly. Tread lightly. Leave with stories.</p>
+        <div class="footer-bottom">© 2026 Visit Lesotho</div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

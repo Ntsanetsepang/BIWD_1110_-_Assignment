@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!-- Web design assignment - my website about Lesotho -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Visit Lesotho | Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!-- navigation bar (I copy this on every page) -->
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
+            <img class="brand-logo" src="Imgs/Coat_of_arms_of_Lesotho.jpg" alt="Coat of arms of Lesotho">
+            <span>Visit Lesotho</span>
+          </a>
+
+          <div class="collapse navbar-collapse" id="myNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+              <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+              <li class="nav-item"><a class="nav-link" href="accommodation.html">Stays</a></li>
+              <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Plan a trip</a></li>
+            </ul>
+
+            <button id="themeToggle" class="theme-toggle ms-lg-3" type="button">🌙</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- hero section -->
+      <section class="hero">
+        <div class="container">
+          <div class="box1">
+            <span>The Mountain Kingdom</span>
+            <h1>Find your own<br><em>higher place.</em></h1>
+            <p>Ancient trails, dramatic skies and stories shared around a fire.</p>
+
+            <div class="d-flex gap-3 flex-wrap">
+              <a class="btn btn-primary btn-lg" href="destinations.html">Explore Lesotho</a>
+              <a class="btn btn-outline-light btn-lg" href="gallery.html">View gallery</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3 cards that tell you about Lesotho -->
+      <section class="section">
+        <div class="container">
+          <div class="heading2">
+            <div>
+              <span>Why Lesotho</span>
+              <h2>A world above the ordinary</h2>
+            </div>
+            <p>Small in size, immense in landscape. Every journey reveals another reason to slow down.</p>
+          </div>
+
+          <div class="row g-4">
+            <article class="col-md-4">
+              <div class="feature-card">
+                <div class="feature-icon">⛰</div>
+                <h3>Wild landscapes</h3>
+                <p>Basalt peaks, waterfalls and alpine plateaus shaped over millions of years.</p>
+              </div>
+            </article>
+
+            <article class="col-md-4">
+              <div class="feature-card">
+                <div class="feature-icon">🐎</div>
+                <h3>Living culture</h3>
+                <p>Meet local communities, hear timeless stories and travel the Basotho pony trails.</p>
+              </div>
+            </article>
+
+            <article class="col-md-4">
+              <div class="feature-card">
+                <div class="feature-icon">🥾</div>
+                <h3>Honest adventure</h3>
+                <p>Walk, ride or paddle through wide-open spaces far from the everyday.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- picture next to some text -->
+      <section class="section section-tint">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+              <img class="left-side" src="Imgs/Katse damn.jpeg" alt="Mountain scenery in Lesotho" loading="lazy">
+            </div>
+
+            <div class="col-lg-6">
+              <span>Plan less, discover more</span>
+              <h2>Your gateway to Africa's mountain kingdom</h2>
+              <p>From Semonkong's thundering Maletsunyane Falls to the still waters of Katse Dam, Lesotho rewards the curious traveller.</p>
+
+              <ul class="check-list">
+                <li>Friendly local guides</li>
+                <li>Year-round hiking and adventure</li>
+                <li>Exceptional high-altitude stargazing</li>
+              </ul>
+
+              <a class="text-link" href="destinations.html">Discover places <span>→</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5">
+            <h3>Visit Lesotho</h3>
+            <p>Travel slowly. Tread lightly. Leave with stories.</p>
+          </div>
+          <div class="col-6 col-lg-3">
+            <h4>Explore</h4>
+            <a href="destinations.html">Destinations</a>
+            <a href="accommodation.html">Accommodation</a>
+            <a href="gallery.html">Photo gallery</a>
+          </div>
+          <div class="col-6 col-lg-4">
+            <h4>Visitor enquiries</h4>
+            <a href="mailto:hello@visitlesotho.ls">hello@visitlesotho.ls</a>
+            <a href="contact.html">Send an enquiry</a>
+          </div>
+        </div>
+        <div class="footer-bottom">© 2026 Visit Lesotho · Web Design Assignment</div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

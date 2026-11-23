@@ -1,0 +1,22 @@
+/* style - Copy.css */
+/* this is my old backup from last week, please dont delete it */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f8f4;
+}
+
+.left-side {
+  float: left;
+  width: 50%;
+}
+
+.heading2 h2 {
+  color: darkblue;
+}
+
+footer {
+  background: black;
+  color: white;
+}

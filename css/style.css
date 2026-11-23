@@ -1,0 +1,442 @@
+/* style.css */
+/* styles for my Lesotho website */
+
+:root {
+  --ink: #17345c;
+  --green: #1f5a3a;
+  --lime: #f4f4f2;
+  --cream: #f7f8f4;
+  --sand: #e8edf4;
+  --text: #52617a;
+  --white: #fff;
+  --lesotho-blue: #1b5a9b;
+  --lesotho-white: #ffffff;
+  --lesotho-green: #2d6b45;
+}
+
+/* stops padding from making the boxes wider */
+* {
+  box-sizing: border-box;
+}
+
+/* the page */
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--ink);
+  background: var(--cream);
+  line-height: 1.7;
+  transition: 0.3s;
+}
+
+/* navigation bar */
+.navbar {
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 3px solid var(--lesotho-blue);
+  padding: 18px 0;
+  box-shadow: 0 1px rgba(24, 33, 29, 0.08);
+  font-family: Arial, sans-serif;
+}
+
+.navbar-brand {
+  color: var(--lesotho-blue) !important;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.nav-link {
+  color: var(--ink) !important;
+  font-size: 14px;
+  margin: 0 5px;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: var(--lesotho-green) !important;
+}
+
+.brand-logo {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+/* hero picture on the home page */
+.hero {
+  min-height: 720px;
+  padding-top: 110px;
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  background:
+    linear-gradient(90deg, rgba(27, 90, 155, 0.82) 5%, rgba(27, 90, 155, 0.2) 70%),
+    url("../Imgs/Tsehlanyane.jpg") center/cover;
+}
+
+.box1 {
+  max-width: 760px;
+}
+
+.hero h1 {
+  margin: 18px 0 28px;
+}
+
+.hero p {
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  max-width: 510px;
+  margin-bottom: 32px;
+}
+
+/* buttons (both my buttons look the same apart from the colour) */
+.btn-primary,
+.btn-outline-light {
+  border-radius: 2px;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  padding: 14px 22px;
+}
+
+.btn-primary {
+  background: var(--lesotho-blue);
+  border-color: var(--lesotho-blue);
+  color: var(--white);
+  letter-spacing: 0.08em;
+}
+
+.btn-primary:hover {
+  background: var(--lesotho-green);
+  border-color: var(--lesotho-green);
+  color: var(--white);
+}
+
+/* sections */
+.section {
+  padding: 100px 0;
+}
+
+.section-tint {
+  background: #edf3ef;
+  border-top: 2px solid var(--lesotho-white);
+  border-bottom: 2px solid var(--lesotho-blue);
+}
+
+.heading2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 45px;
+}
+
+.heading2 p {
+  max-width: 430px;
+  color: var(--text);
+  font-family: Arial, sans-serif;
+}
+
+/* the 3 boxes on the home page */
+.feature-card {
+  border-top: 1px solid #bfc3b6;
+  padding: 28px 24px 20px 0;
+  height: 100%;
+  transition: 0.25s;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  border-top-color: var(--green);
+}
+
+.feature-icon {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.feature-card p,
+.feature-card h3 {
+  font-family: Arial, sans-serif;
+}
+
+.feature-card p {
+  color: var(--text);
+  font-size: 15px;
+}
+
+.left-side {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.check-list {
+  list-style: none;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.check-list li {
+  padding: 8px 0;
+}
+
+.check-list li::before {
+  content: "✓";
+  color: #66825d;
+  margin-right: 12px;
+}
+
+.text-link {
+  color: var(--lesotho-green);
+  font-size: 13px;
+  font-weight: 700;
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.text-link span {
+  font-size: 22px;
+  margin-left: 8px;
+}
+
+/* banner at the top of the other pages */
+.page-hero {
+  margin-top: 74px;
+  padding: 110px 0 70px;
+  background: linear-gradient(135deg, var(--lesotho-blue), var(--lesotho-green));
+  color: var(--white);
+}
+
+/* cards and the form panel are the same white box */
+.destination-card,
+.stay-card,
+.form-panel {
+  background: var(--white);
+  border-radius: 3px;
+}
+
+.destination-card,
+.stay-card {
+  border: 0;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(25, 40, 30, 0.08);
+  height: 100%;
+}
+
+.destination-card img,
+.stay-card img {
+  height: 240px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 25px;
+}
+
+.badge-category {
+  background: var(--lesotho-blue) !important;
+  color: var(--white);
+  font-family: Arial, sans-serif;
+}
+
+.form-panel {
+  padding: 35px;
+}
+
+/* the filter buttons */
+.filter-btn {
+  border: 1px solid #afb7ad;
+  background: transparent;
+  border-radius: 30px;
+  padding: 8px 16px;
+}
+
+.filter-btn.active {
+  background: var(--lesotho-green);
+}
+
+/* gallery */
+.gallery-grid {
+  columns: 3 280px;
+  column-gap: 18px;
+}
+
+.gallery-item {
+  width: 100%;
+  margin-bottom: 18px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.gallery-item:hover {
+  filter: brightness(0.85);
+  transform: scale(0.995);
+}
+
+/* the form boxes */
+.form-control,
+.form-select {
+  border-radius: 2px;
+  padding: 12px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #71836b;
+  box-shadow: 0 0 0 0.2rem rgba(113, 131, 107, 0.15);
+}
+
+/* footer */
+footer {
+  background: #174b36;
+  border-top: 5px solid var(--lesotho-blue);
+  color: #d8dfd8;
+  padding: 70px 0 25px;
+  font-family: Arial, sans-serif;
+}
+
+footer h3,
+footer h4 {
+  color: var(--white);
+}
+
+footer a {
+  display: block;
+  color: #bac5bc;
+  text-decoration: none;
+  margin: 8px 0;
+}
+
+footer a:hover {
+  color: var(--lime);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  margin-top: 45px;
+  padding-top: 20px;
+  font-size: 13px;
+}
+
+.search-wrap {
+  max-width: 520px;
+}
+
+/* DARK MODE */
+/* javascript adds the dark-mode class to the body when the button is clicked */
+.dark-mode {
+  --cream: #000000;
+  --ink: #f5f5f5;
+  --text: #bdbdbd;
+  background: #000000;
+  color: #f5f5f5;
+}
+
+.dark-mode .navbar {
+  background: #0d0d0d;
+  border-bottom-color: #333333;
+  box-shadow: 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.dark-mode .navbar-brand {
+  color: var(--ink) !important;
+}
+
+.dark-mode .nav-link.active,
+.dark-mode .nav-link:hover,
+.dark-mode .check-list li::before {
+  color: #9e9e9e !important;
+}
+
+.dark-mode .section-tint,
+.dark-mode .feature-card {
+  background: #0d0d0d;
+}
+
+.dark-mode .section-tint {
+  border-top-color: #333333;
+  border-bottom-color: #333333;
+}
+
+.dark-mode .feature-card:hover {
+  border-top-color: var(--lesotho-white);
+}
+
+.dark-mode .destination-card,
+.dark-mode .stay-card,
+.dark-mode .form-panel {
+  background: #141414;
+}
+
+.dark-mode .btn-primary,
+.dark-mode .badge-category,
+.dark-mode .filter-btn.active {
+  background: #404040 !important;
+}
+
+.dark-mode .btn-primary {
+  border-color: #404040;
+}
+
+.dark-mode .btn-primary:hover {
+  background: #666666 !important;
+  border-color: #666666;
+}
+
+.dark-mode .text-link {
+  color: #d0d0d0;
+}
+
+.dark-mode .left-side {
+  filter: brightness(0.85);
+}
+
+.dark-mode .hero {
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.85) 5%, rgba(0, 0, 0, 0.3) 70%),
+    url("../Imgs/Tsehlanyane.jpg") center/cover;
+}
+
+.dark-mode .page-hero {
+  background: linear-gradient(135deg, #1a1a1a, #000000);
+}
+
+.dark-mode footer {
+  background: #0d0d0d;
+  border-top-color: #333333;
+}
+
+.dark-mode .gallery-item:hover {
+  filter: grayscale(1) brightness(0.85);
+}
+
+/* for small screens (i tested this on my phone) */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 650px;
+  }
+
+  .section {
+    padding: 70px 0;
+  }
+
+  .heading2 {
+    display: block;
+  }
+
+  .left-side {
+    height: 360px;
+  }
+
+  .navbar-collapse {
+    padding: 20px 0;
+  }
+
+  .gallery-grid {
+    columns: 2 180px;
+  }
+}
